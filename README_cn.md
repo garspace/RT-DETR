@@ -1,5 +1,10 @@
 简体中文 | [English](README.md)
 
+# 训练尺寸
+ 1.修改configs/rtdetr/include/rtdetr_r50vd.yml 第58行的尺寸eval_spatial_size: [1280, 960]  
+ 2.修改configs/rtdetr/include/dataloader.yml 第14行和33行的尺寸{type: Resize, size: [1280, 960], }
+
+
 # RT-DETR 
 
 This is the official implementation of the paper "[DETRs Beat YOLOs on Real-time Object Detection](https://arxiv.org/abs/2304.08069)".
